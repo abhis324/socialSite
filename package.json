@@ -1,0 +1,35 @@
+{
+  "name": "socialsite",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "nodemon ./bin/www"
+  },
+  "dependencies": {
+    "bcrypt": "^3.0.5",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.3",
+    "connect-mongo": "^2.0.3",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "ejs": "~2.5.7",
+    "express": "~4.16.0",
+    "express-session": "^1.15.6",
+    "faker": "^4.1.0",
+    "form-data": "^2.3.3",
+    "gridfs-stream": "^1.1.1",
+    "http-errors": "~1.6.2",
+    "image-to-base64": "^2.0.1",
+    "method-override": "^3.0.0",
+    "mongoose": "^5.4.19",
+    "morgan": "~1.9.0",
+    "multer": "^1.4.1",
+    "multer-gridfs-storage": "^3.2.3",
+    "nodemon": "^1.18.10",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "path": "^0.12.7",
+    "socket.io": "^2.2.0",
+    "util": "^0.11.1"
+  }
+}

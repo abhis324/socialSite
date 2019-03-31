@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <% include ../partials/head %>
+</head>
+<script>
+function abc(friendid)
+{
+  axios.post('/update', { params: { friendid } } ).then((data)=>{
+    console.log(data);
+  })
+}
+</script>
+  <body class="container" style="background : #FFCCFF;">
+    <p>Hello welcome to small facebook!!</p>
+    <p>U have following friend requests</p>
+  <% x.forEach(function(user){ %>
+    <p><%= user.name %></p>
+    <p><%= user.place %></p>
+    <button type="button" id="<%= user._id.toString() %>" onclick="abc(this.id)">Send him friend request</button>
+    <br>
+  <% }) %>
+  </body>
+  </html>

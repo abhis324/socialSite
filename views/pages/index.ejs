@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <% include ../partials/head %>
+</head>
+  <body class="container" style="background : #FFCCFF;">
+    <p>Hello welcome to small facebook!!</p>
+  <header>
+      <% include ../partials/header %>
+  </header>
+  <script>
+    var socket = io();
+    function ab()
+    {
+      console.log("fdond");
+    }
+    socket.on("trytest", function(msg){
+      console.log("it hit", msg)
+      socket.emit("some", "realsome")
+    })
+  </script>
+  <button type="button" name="button" onclick="ab()">CLick here</button>
+</body>
+</html>
